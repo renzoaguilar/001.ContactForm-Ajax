@@ -25,8 +25,8 @@ function validar_campo($campo)
     $contenido = "\n Mensaje: " . $mensaje;
 
     mail($destinoMail, "Mensaje de contacto del cliente". $nombre, $contenido);
-    return print("ok");
+    return print(json_encode('ok'));
  }
 
- return print("no se puede enviar")
+ return print(json_encode('error'));
 ?>
