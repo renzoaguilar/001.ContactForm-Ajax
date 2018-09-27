@@ -8,6 +8,8 @@ function validar_campo($campo)
     return $campo;
 }
 
+header("Content-type:application/json");
+
  if (isset($_POST["nombre"]) && !empty($_POST["nombre"]) &&
  isset($_POST["correo"]) && !empty($_POST["correo"]) &&
  isset($_POST["mensaje"]) && !empty($_POST["mensaje"])){
